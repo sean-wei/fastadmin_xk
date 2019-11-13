@@ -2,29 +2,865 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e033d946-ced5-4cd8-bccd-c4dddd7f8032" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/addons/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/addons/command/Command.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/addons/command/application/admin/controller/Command.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/addons/command/application/admin/lang/zh-cn/command.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/addons/command/application/admin/model/Command.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/addons/command/application/admin/view/command/add.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/addons/command/application/admin/view/command/detail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/addons/command/application/admin/view/command/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/addons/command/info.ini" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/addons/command/install.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/addons/command/library/Output.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/addons/command/public/assets/js/backend/command.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/admin/controller/Command.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/admin/lang/zh-cn/command.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/admin/model/Command.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/admin/view/command/add.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/admin/view/command/detail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/admin/view/command/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/addons/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/fonts/SourceHanSansK-Regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/js/backend/command.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/libs/Sortable/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/libs/art-template/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/libs/bootstrap-select/.github/ISSUE_TEMPLATE.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/libs/fastadmin-addtabs/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/libs/fastadmin-layer/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/libs/fastadmin-selectpage/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/libs/font-awesome/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/libs/tableExport.jquery.plugin/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/template/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/.htaccess" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/20191113/3c9cda4180df883d23b5aa0669d934fe.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/runtime/log/201911/13.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/runtime/temp/43c0299bc752bf33747ceb700554b8a9.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/runtime/temp/44af3b2998d41830bbff3b5a784b8a82.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/runtime/temp/58039c845d95e9d5fa80a79ff3334e91.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/runtime/temp/714e2b2b7bcf9db70e60fec76cab9e5f.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/runtime/temp/980ded2b74c98345ecdc3acbfb190c00.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/runtime/temp/a9034a8f01c951c1ab6a19efad97b6ca.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/runtime/temp/b20e10f4218a0b97bf434221fd1cc683.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/runtime/temp/c0ba072a5b4cdaa70886663405b1f907.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/runtime/temp/cc3f5c7a0899ac9d14b1125ac16e6f03.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/runtime/temp/dcd52736cc40901b29d21fa6ad88d5de.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/runtime/temp/f3df2c66b58143077e3096b7f9435863.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/thinkphp/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/doctrine/cache/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/endroid/qr-code/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/endroid/qr-code/tests/Bundle/app/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/.php_cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/phpstan.neon.dist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Exception/InvalidArgumentException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/karsonzhang/fastadmin-addons/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/markbaker/matrix/composer.7.2.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/markbaker/matrix/infection.json.dist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/markbaker/matrix/phpstan.neon" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/monolog/monolog/src/Monolog/Handler/FormattableHandlerInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/monolog/monolog/src/Monolog/Handler/FormattableHandlerTrait.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/monolog/monolog/src/Monolog/Handler/ProcessableHandlerInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/monolog/monolog/src/Monolog/Handler/ProcessableHandlerTrait.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/overtrue/socialite/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/overtrue/wechat/src/Store/Model/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpoffice/phpspreadsheet/.gitattributes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpoffice/phpspreadsheet/.github/ISSUE_TEMPLATE.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpoffice/phpspreadsheet/.github/PULL_REQUEST_TEMPLATE.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpoffice/phpspreadsheet/.github/stale.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpoffice/phpspreadsheet/.github/support.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpoffice/phpspreadsheet/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpoffice/phpspreadsheet/samples/Reader/21_Reader_CSV_Long_Integers_with_String_Value_Binder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpoffice/phpspreadsheet/samples/Reader/sampleData/longIntegers.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Cell/StringValueBinder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Reader/Ods/Properties.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Reader/Xlsx/AutoFilter.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Reader/Xlsx/BaseParserClass.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Reader/Xlsx/ColumnAndRowAttributes.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Reader/Xlsx/ConditionalStyles.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Reader/Xlsx/DataValidations.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Reader/Xlsx/Hyperlinks.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Reader/Xlsx/PageSetup.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Reader/Xlsx/Properties.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Reader/Xlsx/SheetViewOptions.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Reader/Xlsx/SheetViews.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Reader/Xlsx/Styles.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/pimple/pimple/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/pimple/pimple/ext/pimple/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/psr/container/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/psr/log/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/options-resolver/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/psr-http-message-bridge/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/think-captcha/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/think-installer/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/fastadmin_xk.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/fastadmin_xk.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/geetest/Geetest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/geetest/assets/js/geetest.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/geetest/assets/js/geetest.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/geetest/bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/geetest/config.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/geetest/controller/Index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/geetest/info.ini" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/geetest/library/GeetestLib.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/addons/loginbg/Loginbg.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/addons/loginbg/config.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/loginbg/controller/Index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/loginbg/controller/Index.php" beforeDir="false" afterPath="$PROJECT_DIR$/addons/command/controller/Index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/addons/loginbg/info.ini" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/extra/addons.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/extra/addons.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/loginvideo/Loginvideo.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/loginvideo/config.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/loginvideo/controller/Index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/loginvideo/info.ini" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/loginvideo/view/background.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/summernote/Summernote.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/summernote/assets/css/summernote.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/summernote/assets/font/summernote.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/summernote/assets/font/summernote.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/summernote/assets/font/summernote.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/summernote/assets/js/summernote.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/summernote/assets/js/summernote.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/summernote/assets/lang/summernote-zh-CN.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/summernote/assets/lang/summernote-zh-CN.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/summernote/assets/lang/summernote-zh-TW.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/summernote/assets/lang/summernote-zh-TW.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/summernote/bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/summernote/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/addons/command/config.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/summernote/controller/Index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/summernote/info.ini" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/command/Addon.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/command/Addon.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/command/Api/library/Builder.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/command/Api/library/Builder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/command/Api/library/Extractor.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/command/Api/library/Extractor.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/command/Api/template/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/command/Api/template/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/command/Crud.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/command/Crud.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/command/Crud/stubs/controllerindex.stub" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/command/Crud/stubs/controllerindex.stub" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/command/Crud/stubs/model.stub" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/command/Crud/stubs/model.stub" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/command/Install.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/command/Install.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/command/Install/fastadmin.sql" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/command/Install/fastadmin.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/command/Menu.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/command/Menu.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/controller/Addon.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/controller/Addon.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/controller/Ajax.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/controller/Ajax.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/controller/BaiduBanner.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/controller/Index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/controller/Index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/controller/Test.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/controller/WechatDemo.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/controller/auth/Admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/controller/auth/Admin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/controller/auth/Group.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/controller/auth/Group.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/controller/auth/Rule.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/controller/auth/Rule.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/controller/general/Config.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/controller/general/Config.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/controller/general/Profile.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/controller/general/Profile.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/controller/kaisuo/KaisuoNews.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/controller/kaisuo/KaisuoProduct.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/controller/kaisuo/KsCase.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/controller/kaisuo/KsComment.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/controller/ksconfig/KsAbout.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/controller/ksconfig/KsBanner.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/controller/ksconfig/KsContact.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/controller/ksconfig/KsIntro.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/lang/zh-cn.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/lang/zh-cn.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/lang/zh-cn/addon.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/lang/zh-cn/addon.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/lang/zh-cn/ajax.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/lang/zh-cn/ajax.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/lang/zh-cn/auth/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/lang/zh-cn/auth/admin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/lang/zh-cn/baidu_banner.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/lang/zh-cn/dashboard.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/lang/zh-cn/dashboard.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/lang/zh-cn/general/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/lang/zh-cn/general/config.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/lang/zh-cn/general/profile.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/lang/zh-cn/general/profile.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/lang/zh-cn/kaisuo/kaisuo_news.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/lang/zh-cn/kaisuo/kaisuo_product.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/lang/zh-cn/kaisuo/ks_case.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/lang/zh-cn/kaisuo/ks_comment.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/lang/zh-cn/kaisuo_category.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/lang/zh-cn/kaisuo_contact.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/lang/zh-cn/ksconfig/ks_about.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/lang/zh-cn/ksconfig/ks_banner.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/lang/zh-cn/ksconfig/ks_comment.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/lang/zh-cn/ksconfig/ks_contact.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/lang/zh-cn/ksconfig/ks_intro.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/lang/zh-cn/test.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/lang/zh-cn/wechat_demo.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/library/Auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/library/Auth.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/model/AdminLog.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/model/AdminLog.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/model/BaiduBanner.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/model/KaisuoAbout.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/model/KaisuoCategory.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/model/KaisuoContact.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/model/Test.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/model/WechatDemo.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/model/kaisuo/KaisuoNews.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/model/kaisuo/KaisuoProduct.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/model/kaisuo/Kaisuo_news.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/model/kaisuo/KsCase.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/model/kaisuo/KsComment.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/model/ksconfig/KsAbout.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/model/ksconfig/KsBanner.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/model/ksconfig/KsComment.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/model/ksconfig/KsContact.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/model/ksconfig/KsIntro.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/validate/Admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/validate/Admin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/validate/BaiduBanner.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/validate/Test.php" beforeDir="false" afterPath="$PROJECT_DIR$/addons/command/application/admin/validate/Command.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/validate/WechatDemo.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/validate/Command.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/validate/kaisuo/KaisuoNews.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/validate/kaisuo/KaisuoProduct.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/validate/kaisuo/Kaisuo_news.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/validate/kaisuo/KsCase.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/validate/kaisuo/KsComment.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/validate/ksconfig/KsAbout.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/validate/ksconfig/KsBanner.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/validate/ksconfig/KsComment.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/validate/ksconfig/KsContact.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/validate/ksconfig/KsIntro.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/view/addon/config.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/view/addon/config.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/view/addon/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/view/addon/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/view/auth/admin/add.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/view/auth/admin/add.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/view/auth/admin/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/view/auth/admin/edit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/view/auth/adminlog/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/view/auth/adminlog/detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/view/auth/group/add.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/view/auth/group/add.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/view/auth/group/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/view/auth/group/edit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/view/auth/rule/add.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/view/auth/rule/add.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/view/auth/rule/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/view/auth/rule/edit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/view/baidu_banner/add.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/view/baidu_banner/edit.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/view/baidu_banner/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/view/common/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/view/common/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/view/common/menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/view/common/menu.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/view/common/script.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/view/common/script.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/view/general/attachment/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/view/general/attachment/edit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/view/general/attachment/select.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/view/general/attachment/select.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/view/general/config/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/view/general/config/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/view/general/profile/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/view/general/profile/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/view/index/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/view/index/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/view/index/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/view/index/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/view/kaisuo/kaisuo_news/add.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/view/kaisuo/kaisuo_news/edit.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/view/kaisuo/kaisuo_news/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/view/kaisuo/kaisuo_news/recyclebin.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/view/kaisuo/kaisuo_product/add.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/view/kaisuo/kaisuo_product/edit.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/view/kaisuo/kaisuo_product/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/view/kaisuo/kaisuo_product/recyclebin.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/view/kaisuo/ks_case/add.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/view/kaisuo/ks_case/edit.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/view/kaisuo/ks_case/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/view/kaisuo/ks_case/recyclebin.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/view/kaisuo/ks_comment/add.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/view/kaisuo/ks_comment/edit.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/view/kaisuo/ks_comment/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/view/ksconfig/ks_about/add.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/view/ksconfig/ks_about/baiduqr.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/view/ksconfig/ks_about/edit.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/view/ksconfig/ks_about/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/view/ksconfig/ks_banner/add.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/view/ksconfig/ks_banner/edit.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/view/ksconfig/ks_banner/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/view/ksconfig/ks_contact/add.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/view/ksconfig/ks_contact/edit.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/view/ksconfig/ks_contact/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/view/ksconfig/ks_intro/add.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/view/ksconfig/ks_intro/edit.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/view/ksconfig/ks_intro/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/view/ksconfig/ks_intro/recyclebin.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/view/test/add.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/view/test/edit.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/view/test/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/view/test/recyclebin.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/view/wechat_demo/add.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/view/wechat_demo/edit.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/view/wechat_demo/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/view/wechat_demo/recyclebin.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/api/controller/Common.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/api/controller/Common.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/api/controller/Sms.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/api/controller/Sms.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/api/controller/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/api/controller/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/api/lang/zh-cn/common.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/api/lang/zh-cn/common.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/common.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/common.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/common/controller/Api.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/common/controller/Api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/common/controller/Backend.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/common/controller/Backend.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/common/controller/Frontend.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/common/controller/Frontend.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/common/library/Auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/common/library/Auth.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/common/library/Email.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/common/library/Email.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/common/model/Config.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/common/model/Config.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/common/view/tpl/dispatch_jump.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/application/common/view/tpl/dispatch_jump.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/config.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/database.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/extra/site.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/extra/site.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/extra/upload.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/extra/upload.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/index/controller/Baidu.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/index/controller/Index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/index/controller/Index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/index/controller/PreviewLdy.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/index/controller/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/index/controller/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/index/lang/zh-cn.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/index/lang/zh-cn.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/index/lang/zh-cn/ajax.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/index/lang/zh-cn/ajax.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/index/lang/zh-cn/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/index/lang/zh-cn/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/index/view/common/script.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/index/view/common/script.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/index/view/index/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/index/view/index/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/index/view/layout/default.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/index/view/layout/default.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/index/view/preview_ldy/content01.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/index/view/preview_ldy/content02.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/index/view/preview_ldy/content03.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/index/view/preview_ldy/content04.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/index/view/preview_ldy/content05.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/index/view/preview_ldy/content06.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/index/view/preview_ldy/content07.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/index/view/preview_ldy/content08.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/index/view/preview_ldy/content09.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/index/view/preview_ldy/content10.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/index/view/preview_ldy/index01.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/index/view/preview_ldy/index02.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/index/view/preview_ldy/index03.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/index/view/preview_ldy/index04.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/index/view/preview_ldy/index05.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/index/view/preview_ldy/index06.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/index/view/preview_ldy/index07.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/index/view/preview_ldy/index08.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/index/view/preview_ldy/index09.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/index/view/preview_ldy/index10.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/index/view/preview_ldy/list_glsxly.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/index/view/preview_ldy/list_test.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/index/view/user/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/index/view/user/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/xkfast.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/api.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/api.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/addons/summernote/css/summernote.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/addons/summernote/font/summernote.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/addons/summernote/font/summernote.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/addons/summernote/font/summernote.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/addons/summernote/js/summernote.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/addons/summernote/js/summernote.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/addons/summernote/lang/summernote-zh-CN.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/addons/summernote/lang/summernote-zh-CN.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/addons/summernote/lang/summernote-zh-TW.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/addons/summernote/lang/summernote-zh-TW.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/css/backend.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/css/backend.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/css/backend.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/css/backend.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/fonts/fzltxh.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/js/addons.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/js/addons.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/js/backend.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/js/backend.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/js/backend/addon.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/js/backend/addon.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/js/backend/baidu_banner.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/js/backend/category.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/js/backend/category.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/js/backend/general/attachment.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/js/backend/general/attachment.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/js/backend/general/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/js/backend/general/config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/js/backend/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/js/backend/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/js/backend/kaisuo/kaisuo_news.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/js/backend/kaisuo/kaisuo_product.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/js/backend/kaisuo/ks_case.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/js/backend/kaisuo/ks_comment.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/js/backend/kaisuo_about.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/js/backend/kaisuo_category.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/js/backend/kaisuo_contact.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/js/backend/kaisuo_product/kaisuo_category.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/js/backend/ksconfig/ks_about.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/js/backend/ksconfig/ks_banner.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/js/backend/ksconfig/ks_comment.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/js/backend/ksconfig/ks_contact.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/js/backend/ksconfig/ks_intro.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/js/backend/ldy_doc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/js/backend/ldy_doc_detail.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/js/backend/ldy_doc_reply.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/js/backend/ldy_main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/js/backend/ldy_picture.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/js/backend/ldy_server.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/js/backend/ldy_test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/js/backend/test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/js/backend/user/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/js/backend/user/user.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/js/backend/wechat_demo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/js/bootstrap-table-commonsearch.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/js/bootstrap-table-commonsearch.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/js/echarts.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/js/echarts.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/js/fast.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/js/fast.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/js/frontend/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/js/frontend/user.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/js/require-backend.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/js/require-backend.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/assets/js/require-backend.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/js/require-backend.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/js/require-form.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/js/require-form.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/js/require-frontend.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/js/require-frontend.min.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/assets/js/require-table.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/js/require-table.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/js/require-upload.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/js/require-upload.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/less/backend.less" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/less/backend.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/libs/fastadmin-citypicker/.bower.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/libs/fastadmin-citypicker/.bower.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/libs/fastadmin-citypicker/bower.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/libs/fastadmin-citypicker/bower.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/libs/fastadmin-citypicker/dist/js/city-picker.data.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/libs/fastadmin-citypicker/dist/js/city-picker.data.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/libs/fastadmin-citypicker/dist/js/city-picker.data.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/libs/fastadmin-citypicker/dist/js/city-picker.data.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/libs/fastadmin-citypicker/dist/js/city-picker.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/libs/fastadmin-citypicker/dist/js/city-picker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/libs/fastadmin-citypicker/dist/js/city-picker.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/libs/fastadmin-citypicker/dist/js/city-picker.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/libs/fastadmin-citypicker/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/libs/fastadmin-citypicker/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/libs/fastadmin-citypicker/src/city-picker.data.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/libs/fastadmin-citypicker/src/city-picker.data.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/libs/fastadmin-citypicker/src/city-picker.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/libs/fastadmin-citypicker/src/city-picker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/libs/fastadmin-selectpage/.bower.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/libs/fastadmin-selectpage/.bower.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/libs/fastadmin-selectpage/selectpage.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/libs/fastadmin-selectpage/selectpage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/libs/fastadmin-selectpage/selectpage.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/libs/fastadmin-selectpage/selectpage.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/libs/moment/.bower.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/libs/moment/.bower.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/libs/tableExport.jquery.plugin/.bower.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/libs/tableExport.jquery.plugin/.bower.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/libs/tableExport.jquery.plugin/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/libs/tableExport.jquery.plugin/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/libs/tableExport.jquery.plugin/bower.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/libs/tableExport.jquery.plugin/bower.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/libs/tableExport.jquery.plugin/tableExport.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/libs/tableExport.jquery.plugin/tableExport.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/libs/tableExport.jquery.plugin/tableExport.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/libs/tableExport.jquery.plugin/tableExport.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/install.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/install.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/index_files/1-1Q024150913501.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/index_files/1-1Q02415132M09.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/index_files/1-1Q024151644U5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/index_files/1-1Q024151Q2148.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/index_files/1-1Q026120115128.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/index_files/1-1Q22109414ML.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/index_files/1-1Q2221TIJ33.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/index_files/1-1Q2221TT4E2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/index_files/1-1Q224125419B5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/index_files/1-1Q230162324400.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/index_files/1-1Z104005401964.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/index_files/1-1Z125114524K5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/index_files/1-1Z125115459438.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/index_files/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/index_files/14.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/index_files/1530313P0-0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/index_files/153031M10-0.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/index_files/1_002.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/index_files/3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/index_files/9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/index_files/a1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/index_files/a12.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/index_files/a13.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/index_files/a15.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/index_files/a16.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/index_files/a18.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/index_files/a2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/index_files/a20.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/index_files/a21.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/index_files/a22.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/index_files/a4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/index_files/a5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/index_files/a6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/index_files/a7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/index_files/a8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/index_files/a9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/index_files/clipboard.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/index_files/ding.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/index_files/email-decode.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/index_files/fastclick.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/index_files/image023.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/index_files/image025.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/index_files/jquery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/index_files/logos.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/index_files/mfwask.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/index_files/sprite.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/index_files/style4.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/index_files/weixin.htm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/index_files/ww.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/index_files/微信图片_20190328154550.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/index_files/微信图片_20190328154605.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/index_files/微信图片_20190328154811.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/index_files/微信图片_20190328154816.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/index_files/微信图片_20190328154851.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/27/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/27/static/062acde7c1160e7bc7910572a96121e8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/27/static/1-1Q12116293J96.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/27/static/1-1Q12116295G61.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/27/static/1-1Q121163014M1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/27/static/1-1Q1211630295Y.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/27/static/33.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/27/static/40.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/27/static/888.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/27/static/JS5.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/27/static/download3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/27/static/dzpic.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/27/static/hm.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/27/static/i.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/27/static/ico01.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/27/static/jquery-2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/27/static/plpic.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/27/static/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/27/static/vip.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/img/qrcode.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/27/static/wKgB3FCFY6SAE_cJAAHqRb_SLfU66.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/27/static/wKgB4lOegg6Ab_ezAAEl0WaVHtg22.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/27/static/wKgB6lTtf2qAZUu3AAGb4wOc1R492.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/27/static/wKgBEFpTPO6AH0G4AABpPQWMgsg67.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/27/static/wKgBZ1mNdP6Afev_AAz9wK6c3cc70.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/27/static/wKgBm039aX3f-OjIAAAqVe81buo09.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/27/static/wKgBpVXgH-mAanzyAAJ-88nSpcg18.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/27/static/wKgBs1Zqy26ATU0GAAClOHPZFx014.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/27/static/wKgBs1aVCPOAZbZVAADe9bntTm440.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/27/static/wKgBs1aVnnqAM92sAAlmKzzOD9s79.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/29/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/29/static/0f7141cae566bd089790cd2fd7baafe1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/29/static/1-1Q121163439507.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/29/static/1-1Z10G15I1617.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/29/static/11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/29/static/22.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/29/static/222.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/29/static/33.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/29/static/333.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/29/static/3f78a5c9383fb0d46e9b65059318d272.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/29/static/444.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/29/static/55.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/29/static/66.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/29/static/666.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/29/static/77.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/29/static/777.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/29/static/83bcb32d0a6fe089cd8d689d0d29ada0.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/29/static/88.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/29/static/888.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/29/static/99.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/29/static/999.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/29/static/JS5.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/29/static/a.htm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/29/static/a3c1741860cc59c31a627e95a8f44138.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/29/static/aixin.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/29/static/b1b060c2708d87e57ee91f087d5be306.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/29/static/cai.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/29/static/dc18e7a39737ce71feb2e4e797a0322a.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/29/static/e424e968b6d0c72a390b4abb88cf1e56.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/29/static/fac6492e35962801671f201e4d8aa4b2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/29/static/hm.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/29/static/jquery-2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/29/static/lbs-search.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/29/static/navli.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/29/static/share_style0_16.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/29/static/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/29/static/wKgB3FGNxvuAT2HoAADZbAf2joc57.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/29/static/zan.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/29/static/zhidaoicon_300.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/31/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/31/static/1-1Q121163GDT.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/31/static/1-1Q121163I4E6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/31/static/1-1Q20214525Y54.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/31/static/1-1Q2201GQ4Y2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/31/static/111.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/31/static/333.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/31/static/44.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/31/static/444.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/31/static/55.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/31/static/666.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/31/static/77.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/31/static/79.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/31/static/81.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/31/static/83775dcf452e49769d21827634e33cf8_C_180_180.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/31/static/88.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/31/static/888.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/31/static/CggYGlYWZJuAUfX1AAA4yjLzg-A801_C_180_180.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/31/static/CghzfVS-inCALk7PAAF575JZ9c4197_C_180_180.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/31/static/aixin.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/31/static/cai.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/31/static/eb72997b14fa4204b3f0767ec5079872_C_180_180.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/31/static/hm.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/31/static/image017.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/31/static/jquery-2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/31/static/lbs-search.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/31/static/navli.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/31/static/share_style0_16.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/31/static/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/31/static/zan.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/31/static/zhidaoicon_300.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/34/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/34/static/1-1Q121164523K2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/34/static/1-1Q12116453Y43.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/34/static/1-1Q121164645634.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/34/static/1-1Q121164F5a8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/34/static/1-1Q121164GX96.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/34/static/1-1Q121164I5504.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/34/static/1-1Q202142532141.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/34/static/1-1Z10G42J4424.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/34/static/11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/34/static/111.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/34/static/12.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/34/static/132.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/34/static/20.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/34/static/21.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/34/static/222.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/34/static/333.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/34/static/40.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/34/static/42.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/34/static/444.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/34/static/49.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/34/static/63.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/34/static/88.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/34/static/8d6d4bc69f4ed6b954b40f6be5dc259a.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/34/static/92.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/34/static/999.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/34/static/Z8040l000000d14smD070_C_180_180.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/34/static/download3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/34/static/dzpic.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/34/static/f6d4dbd6ef744e2f82b5e2fd447da25a_C_180_180.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/34/static/hm.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/34/static/i.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/34/static/image038.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/34/static/jquery-2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/34/static/plpic.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/34/static/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/34/static/vip.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/34/static/wKgBs1bChgWAN5mMAAIS3RXlDEI61.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/35/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/35/static/1-1Q121164923630.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/35/static/1-1Q202142532141.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/35/static/1-1Q2201G031530.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/35/static/111.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/35/static/33.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/35/static/40.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/35/static/444.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/35/static/99.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/35/static/download3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/35/static/dzpic.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/35/static/hm.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/35/static/i.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/35/static/image017.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/35/static/jquery-2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/35/static/plpic.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/35/static/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/35/static/vip.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/35/static/wKgB21BkVYCUh7xeAAE-XgL25_s82%201.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/35/static/wKgB3FD5YwSARXP0AACd2PWgwUc83.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/35/static/wKgB3FGcrcmARgNnAAFYLH5cBmw75.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/35/static/wKgBZ1jbYVeARLaIAAQmVwSOCjA79%201.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/35/static/wKgBZ1mNdP6Afev_AAz9wK6c3cc70.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/35/static/wKgBs1aVCPOAZbZVAADe9bntTm440%201.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/36/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/36/static/1-1Q1211A023E3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/36/static/1-1Q1211A055N2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/36/static/1-1Q1211A131933.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/36/static/1-1Z10R21452U5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/36/static/21.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/36/static/222.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/36/static/40.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/36/static/55.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/36/static/555.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/36/static/63.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/36/static/7520ae555dff4384b56b7aab2bf0c3a4_C_180_180.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/36/static/83775dcf452e49769d21827634e33cf8_C_180_180.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/36/static/ab9ff7ccd7f54aa59cb18208c5b0ee32_C_180_180.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/36/static/download3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/36/static/dzpic.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/36/static/eb72997b14fa4204b3f0767ec5079872_C_180_180.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/36/static/hm.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/36/static/i.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/36/static/image011.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/36/static/image012.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/36/static/image013.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/36/static/image014.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/36/static/jquery-2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/36/static/plpic.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/36/static/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/36/static/timg%205.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/36/static/vip.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/36/static/wKgB3FEKLHOAfutnAACLoNcqoOk93.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/36/static/wKgB3FGNxvuAT2HoAADZbAf2joc57.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/36/static/wKgBEFpTPO6AH0G4AABpPQWMgsg67.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/38/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/38/static/1-1Q1211Q053517.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/38/static/1-1Q1211Q125C8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/38/static/1-1Q202143014644.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/38/static/11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/38/static/132.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/38/static/22.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/38/static/222.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/38/static/333.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/38/static/3351e38c81c02a4fd33b579d06c07662.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/38/static/40.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/38/static/43.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/38/static/55.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/38/static/555.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/38/static/77.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/38/static/777.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/38/static/79.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/38/static/88.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/38/static/888.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/38/static/88c527ca2a942018b8352d2f2a42d342.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/38/static/999.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/38/static/download3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/38/static/dzpic.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/38/static/hm.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/38/static/i.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/38/static/jquery-2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/38/static/plpic.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/38/static/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/38/static/vip.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/index1/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/index1/static/03710e061d817044396ac3541fd00bbb.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/index1/static/08cffd40ddd9c885d453c1b632ba40d8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/index1/static/1-1Q121161649458.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/index1/static/1-1Q121161Z3305.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/index1/static/1-1Q121162024T5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/index1/static/1-1Q121162050518.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/index1/static/1-1Q121162102392.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/index1/static/1-1Q121162112440.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/index1/static/1-1Q121162124O0.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/index1/static/1-1Q12116213I06.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/index1/static/1-1Q121162201G0.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/index1/static/1-1Q230154609335.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/index1/static/1-1Q2301546442X.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/index1/static/1-1Q230154I9360.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/index1/static/1-1Q2301552311Z.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/index1/static/1-1Q230161419627.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/index1/static/1-1Q2311AG3R9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/index1/static/1-1Q2311FG2J1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/index1/static/15cd0395eebfc49adfd39aaae76b1970.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/index1/static/1979ba0da1ed04c3846d8c08da8f1e3e.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/index1/static/1a91b2287eac7321d2a401593289990d.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/index1/static/205496d76b0206671faa73d30948f537.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/index1/static/20b6261fb99ec713dcc04ca8fce103cd.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/index1/static/233b0a4442774cb5b621591fd96a575f.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/index1/static/280976993393c8fc39618b0f41787405.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/index1/static/295984ef1152efede9b1b0bb28773ab9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/index1/static/342d0df1e7b1bf8d40e9bb662c8be981.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/index1/static/3df4f7a9d91ddc6a341c5b24e5c48f93.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/index1/static/4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/index1/static/497b235932689a709e8b558efc9dba76.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/index1/static/4b49da1d19c893134850326329d1348d.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/index1/static/4d7040a9635f775cb25c8a3d63e49eca.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/index1/static/5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/index1/static/6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/index1/static/7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/index1/static/706814e2e4556e6e3c39ef474bc6ed0c.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/index1/static/75be9a2372d5c3a80539a0ccb4cc36e0.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/index1/static/772799edb80dbd30633967c840888f2c.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/index1/static/79b84c3478667ad83bf44dd1f183f173.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/index1/static/8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/index1/static/8b7424575530e0681b059953c5f01ea9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/index1/static/8d4274cd1b60c765d57e525a78ea1590.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/index1/static/9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/index1/static/9b05a9a0b6a16cc151524937661985c1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/index1/static/9dd8c3e7abbb1673a372e8cfd1a0f2f7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/index1/static/a096fe5d09f57470f7a31c9a700a1a66.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/index1/static/a36549ccdaad2359f4ff5baed6c348c9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/index1/static/ade3e41277f43d5ec81dfc08f4ad196e.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/index1/static/b1cabd300b51c9641f6b62c26862d4fc.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/index1/static/bc5b701090e4ba3022700181bfd10b76.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/index1/static/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/index1/static/c1f297b3a8615809c6cf7e43c07de3e6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/index1/static/cf84d5ce602eeeada352eef6370da322.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/index1/static/clipboard.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/index1/static/common.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/index1/static/d63f8e46d04e1d782030c3d7fa38c3c1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/index1/static/d830c2c91d07bbfb7d7ff9d297b47d4f.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/index1/static/da78189093f5057eeeb5f2bcf0d2f967.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/index1/static/e0757579ad8a7e7e255f821800f148eb.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/index1/static/e6e4406895787ae8fb08b382d250fa93.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/index1/static/ec80da4d03918fb1e766cd9305bc6af8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/index1/static/f3db1ac86aa02333a1d7aee8aac1b624.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/index1/static/f50d274b034eedc3d43042e658cb3a7b.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/index1/static/f8216e3aea96bad2e7cebee87ce9ea61.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/index1/static/fac6f12b9686d8dcddc6299c9e4e0ddd.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/index1/static/fae403e77389f3912f21bf7cb7516a08.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/index1/static/fb5de03947d9ba64f31e1643aa356e6a.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/index1/static/fonts/icomoon.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/index1/static/fonts/icomoon.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/index1/static/get_kefu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/index1/static/hm.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/index1/static/iconn.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/index1/static/jquery-2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/index1/static/link.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/index1/static/main.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/index1/static/main_002.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/index1/static/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/index1/static/style_002.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/main/index1/static/ww.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/static/css/font.all.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/static/css/mip-custom.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/static/css/mip-custom04.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/static/css/mip-custom05.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/static/css/mip-custom08.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/static/css/mip-custom09.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/static/css/mip-custom10.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/static/css/mip.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/static/css/render.styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/static/images/2.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/static/images/3.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/static/images/Rectangle_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/static/images/bsml-form-care.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/static/images/cip_ml_pic017bb47d-855c-4bf3-ab5d-ca0ea9da2a8c.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/static/images/cip_ml_pic1605201a-45f7-4d75-a5b4-6d697d5f5d27.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/static/images/cip_ml_pic18e14294-71c9-4871-84e4-6f653a140062.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/static/images/cip_ml_pic1e7b408f-0d40-4c77-ab8f-4b7c13c96c81.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/static/images/cip_ml_pic20cd831f-8da0-4074-b1e0-51773d42deda.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/static/images/cip_ml_pic20ed1f5e-4f25-49b5-bd92-834006d53fe7.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/static/images/cip_ml_pic2774c676-3a70-4739-8790-358b3bb5637f.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/static/images/cip_ml_pic36a791cb-3aae-438e-9547-aeb0b70950a7.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/static/images/cip_ml_pic36c5f8e4-2a9b-4945-aca7-4bb8d81f8915.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/static/images/cip_ml_pic44a62211-4ba2-48c7-8079-c426feaedcd2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/static/images/cip_ml_pic44e283d5-d725-41df-a560-e158f458cf73.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/static/images/cip_ml_pic51fbddd0-6d55-401f-9aa8-81a7017281fb_cut.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/static/images/cip_ml_pic56d0ea94-880f-488e-b0c5-d7784932cf63.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/static/images/cip_ml_pic5d85df1f-af8a-4832-bff2-9ee657458bd2.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/static/images/cip_ml_pic7a67d4a9-44ab-41b0-9c03-38f148a61a22.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/static/images/cip_ml_pic7ab9c50e-6d2a-40cb-a3e6-d3b7394bb5e2.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/static/images/cip_ml_pic89a6f751-6225-467b-af8b-78477ce3d0d9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/static/images/cip_ml_pic8bbc7b9b-e2be-48c4-a045-608a1aa8d1fe.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/static/images/cip_ml_pic92cb6a12-6878-4134-8cd9-0de160495cd2.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/static/images/cip_ml_pic9b82a23b-11c9-4ad1-8ef0-c99a77e48fb0.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/static/images/cip_ml_pica2152107-4dd0-4f6c-bf27-5b01810f4415.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/static/images/cip_ml_picaf6c5646-fc9f-4c77-9d92-50e419a70663.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/static/images/cip_ml_picc26a9d3a-f231-416e-84a8-bef72cac342b.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/static/images/cip_ml_picc506a55f-6947-4237-8a99-390e19edb649.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/static/images/cip_ml_piccd8933eb-558d-4524-bbca-6b4b7606c4cc.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/static/images/cip_ml_picd17e1e92-d561-46e7-ad83-717ac592781d.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/static/images/cip_ml_picd54a99cd-4d8f-46de-837d-149f21f907f0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/static/images/cip_ml_picd92196dd-3c4e-42cf-9ca1-2886bd0bb924.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/static/images/cip_ml_picdb135ed7-fa29-43f4-8e36-5b667e4c16da.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/static/images/cip_ml_picdd245cd8-ca03-41e4-8274-2a13bf43f51b.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/static/images/cip_ml_pice861fbdb-da96-488f-ad1a-167029df7ef8.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/static/images/cip_ml_piceb684d32-1cc8-4323-8f68-87c02a0ca894_cut.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/static/images/cip_ml_picf14ac989-023a-47b5-ae68-a652ac509477.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/static/images/clear.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/static/images/downIcon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/static/images/icon2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/static/images/index.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/static/images/来宪jpgw720.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/static/images/梵客送全屋家具.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/static/images/电视台短片1.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/static/js/mip-bsml-carousel.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/static/js/mip-bsml-fixedbar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/static/js/mip-bsml-form.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/static/js/mip-bsml-multiselect.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/static/js/mip-bsml-performance.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/static/js/mip-bsml-widget.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/static/js/mip-example.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/static/js/mip-fixed.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/static/js/mip-form.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/static/js/mip-mymodal2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/static/js/mip-sjh-log.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/static/js/mip-stats-baidu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/static/js/mip.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/static/js/qrcode.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/static/js/render.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/style/81666.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/style/clipboard.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/style/jbx1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/style/jquery-1.7.2.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/style/jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/style/liuyan.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/style/style_3.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/style/style_3_default.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/style/tj.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/style/tx15.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/style/tx21.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/style/xl-1list_4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/style/xl-1list_44.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ldy_assets/style/xl-1list_51.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/20191112/3b9e88b29687b5eaa915b58ccc4e0808.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/uploads/20191113/3b9e88b29687b5eaa915b58ccc4e0808.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/baiduqr.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/runtime/cache/cb/78ef4a9130f39208ff10858ddd8377.php" beforeDir="false" afterPath="$PROJECT_DIR$/runtime/cache/cb/78ef4a9130f39208ff10858ddd8377.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/log/201911/12.log" beforeDir="false" afterPath="$PROJECT_DIR$/runtime/log/201911/12.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/log/201911/12.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/log/201911/1573549874-12.log" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/runtime/temp/062846480740e15a76c013b18758756d.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/temp/1198cc32fc02f4df178ac9d6ca1287c5.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/runtime/temp/15ec3c6426921a5b20cd677ecafa9595.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/runtime/temp/225b69ca7d18c53d2c0ce19338f49eff.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/temp/3f8f3df8c979691f51f53083b982f29b.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/temp/29ebcd09eb7d9c9bf1be227f98db07a7.php" beforeDir="false" afterPath="$PROJECT_DIR$/runtime/temp/29ebcd09eb7d9c9bf1be227f98db07a7.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/temp/3f8f3df8c979691f51f53083b982f29b.php" beforeDir="false" afterPath="$PROJECT_DIR$/runtime/temp/bd34a59cb6bbf0c484fea4c946fbf705.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/runtime/temp/54da2462d950212abe92dcac6e9a356f.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/temp/60cabd6cf9d125d46c656e5b5f0fa310.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/temp/60cabd6cf9d125d46c656e5b5f0fa310.php" beforeDir="false" afterPath="$PROJECT_DIR$/runtime/temp/81ff81537b0aef8b2235605e755ed6af.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/temp/6b68fce9f3544c9fe909fa51e50715a9.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/runtime/temp/9c2912db85fc4a6c23a841f7d941ff9d.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/temp/a896477c37b013598d531b56695cd57e.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/temp/d2765f97f188d5daa0a9f79ea4a4e85b.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/temp/db45ca4895c859296f83590290c8c1d8.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/temp/a4b82a125dcc67746e2d06b360f2191f.php" beforeDir="false" afterPath="$PROJECT_DIR$/runtime/temp/81032cb83d7e6e813a22d5e51b4cdc9e.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/temp/a896477c37b013598d531b56695cd57e.php" beforeDir="false" afterPath="$PROJECT_DIR$/runtime/temp/a564eda2bb4830c6a1b8eb9840d0c1ec.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/temp/b5b5c123460a299bfe8e30e7246f12d1.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/temp/c84904a2e6bd9e07e7a100e17bf70219.php" beforeDir="false" afterPath="$PROJECT_DIR$/runtime/temp/9e98c956b6fca4588fed7ba70106d8db.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/temp/ca3f8caaceb9e215bd7139b52f245bf3.php" beforeDir="false" afterPath="$PROJECT_DIR$/runtime/temp/ca3f8caaceb9e215bd7139b52f245bf3.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/temp/d1da9ef3a2f6f75d9174f2819fb9ab47.php" beforeDir="false" afterPath="$PROJECT_DIR$/runtime/temp/28adc271ffd335fcc7c064d64702ec11.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/temp/d2765f97f188d5daa0a9f79ea4a4e85b.php" beforeDir="false" afterPath="$PROJECT_DIR$/runtime/temp/9b368eb6f49fbe74496d31fcd2dce637.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/temp/db45ca4895c859296f83590290c8c1d8.php" beforeDir="false" afterPath="$PROJECT_DIR$/runtime/temp/28d07f3a6b924b568a09d1512e9f9ee5.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/runtime/temp/f77e603d4c95e85f52f0c4d247a7537b.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/temp/fd12aa84c9597114d2e8bd6cfa5ede1d.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/autoload.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/autoload.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/composer/ClassLoader.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/ClassLoader.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/composer/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/LICENSE" afterDir="false" />
@@ -416,20 +1252,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/ldy_assets/main/35/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5472">
-              <caret line="288" column="94" selection-start-line="288" selection-start-column="94" selection-end-line="288" selection-end-column="94" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/index/controller/Index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="327">
-              <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+            <state relative-caret-position="308">
+              <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -443,29 +1270,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Owner.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/admin/controller/muser/Owner.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="81">
-              <caret line="36" column="6" lean-forward="true" selection-start-line="36" selection-start-column="6" selection-end-line="36" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="database.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/database.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="21" column="10" lean-forward="true" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Driver.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/admin/controller/muser/Driver.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="37" column="7" lean-forward="true" selection-start-line="37" selection-start-column="7" selection-end-line="37" selection-end-column="7" />
+            <state relative-caret-position="173">
+              <caret line="20" column="68" selection-start-line="20" selection-start-column="68" selection-end-line="20" selection-end-column="68" />
             </state>
           </provider>
         </entry>
@@ -475,15 +1284,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="277">
               <caret line="39" column="3" selection-start-line="39" selection-start-column="3" selection-end-line="69" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Owner.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/admin/model/Owner.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="665">
-              <caret line="35" selection-start-line="35" selection-end-line="35" />
             </state>
           </provider>
         </entry>
@@ -504,7 +1304,6 @@
               <caret line="12" selection-start-line="12" selection-end-line="12" />
               <folding>
                 <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="e#7878#7884#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -519,6 +1318,7 @@
       <find>pull-right-container</find>
       <find>winda</find>
       <find>img-sm img-center</find>
+      <find>南宁详垦</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$</dir>
@@ -530,7 +1330,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/application/database.php" />
         <option value="$PROJECT_DIR$/application/admin/view/index/login.html" />
         <option value="$PROJECT_DIR$/application/extra/site.php" />
         <option value="$PROJECT_DIR$/application/admin/view/common/header.html" />
@@ -539,6 +1338,7 @@
         <option value="$PROJECT_DIR$/application/admin/model/Diver.php" />
         <option value="$PROJECT_DIR$/application/admin/controller/muser/Driver.php" />
         <option value="$PROJECT_DIR$/application/admin/controller/muser/Owner.php" />
+        <option value="$PROJECT_DIR$/application/database.php" />
       </list>
     </option>
   </component>
@@ -619,37 +1419,6 @@
             <path>
               <item name="fastadmin_xk" type="b2602c69:ProjectViewProjectNode" />
               <item name="fastadmin_xk" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="fastadmin_xk" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fastadmin_xk" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="admin" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="fastadmin_xk" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fastadmin_xk" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="admin" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="controller" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="fastadmin_xk" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fastadmin_xk" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="admin" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="controller" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="muser" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="fastadmin_xk" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fastadmin_xk" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="extend" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="fastadmin_xk" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fastadmin_xk" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
@@ -694,12 +1463,12 @@
       <option name="presentableId" value="Default" />
       <updated>1573549238988</updated>
       <workItem from="1573549240496" duration="2491000" />
-      <workItem from="1573604979299" duration="5555000" />
+      <workItem from="1573604979299" duration="6133000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8046000" />
+    <option name="totallyTimeSpent" value="8624000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -773,7 +1542,6 @@
           <caret line="14" column="45" selection-start-line="14" selection-start-column="45" selection-end-line="14" selection-end-column="45" />
           <folding>
             <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#7878#7884#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -857,15 +1625,14 @@
           <caret line="12" selection-start-line="12" selection-end-line="12" />
           <folding>
             <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#7878#7884#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/index/controller/Index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+        <state relative-caret-position="308">
+          <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -913,8 +1680,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/database.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="21" column="10" lean-forward="true" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
+        <state relative-caret-position="173">
+          <caret line="20" column="68" selection-start-line="20" selection-start-column="68" selection-end-line="20" selection-end-column="68" />
         </state>
       </provider>
     </entry>
