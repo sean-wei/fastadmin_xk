@@ -20,7 +20,7 @@ define(['jquery', 'bootstrap', 'upload', 'validator'], function ($, undefined, U
                     },
                     dataFilter: function (data) {
                         if (data.code === 1) {
-                            return "";
+                            return data.msg ? { "ok": data.msg } : '';
                         } else {
                             return data.msg;
                         }
@@ -272,7 +272,7 @@ define(['jquery', 'bootstrap', 'upload', 'validator'], function ($, undefined, U
                             var textarea = $("textarea[name='" + name + "']", form);
                             var container = textarea.closest("dl");
                             var template = container.data("template");
-                            $.each($("input,select", container).serializeArray(), function (i, j) {
+                            $.each($("input,select,textarea", container).serializeArray(), function (i, j) {
                                 var reg = /\[(\w+)\]\[(\w+)\]$/g;
                                 var match = reg.exec(j.name);
                                 if (!match)
@@ -431,7 +431,7 @@ define(['jquery', 'bootstrap', 'upload', 'validator'], function ($, undefined, U
                     complete: function (xhr) {
                         var token = xhr.getResponseHeader('__token__');
                         if (token) {
-                            $("input[name='__token__']", form).val(token);
+                            $("input[name='__token__']").val(token);
                         }
                     }
                 }, function (data, ret) {
@@ -439,7 +439,7 @@ define(['jquery', 'bootstrap', 'upload', 'validator'], function ($, undefined, U
                     if (data && typeof data === 'object') {
                         //刷新客户端token
                         if (typeof data.token !== 'undefined') {
-                            $("input[name='__token__']", form).val(data.token);
+                            $("input[name='__token__']").val(data.token);
                         }
                         //调用客户端事件
                         if (typeof data.callback !== 'undefined' && typeof data.callback === 'function') {
@@ -453,7 +453,7 @@ define(['jquery', 'bootstrap', 'upload', 'validator'], function ($, undefined, U
                     }
                 }, function (data, ret) {
                     if (data && typeof data === 'object' && typeof data.token !== 'undefined') {
-                        $("input[name='__token__']", form).val(data.token);
+                        $("input[name='__token__']").val(data.token);
                     }
                     if (typeof error === 'function') {
                         if (false === error.call(form, data, ret)) {

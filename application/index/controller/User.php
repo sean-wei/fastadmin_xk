@@ -3,6 +3,7 @@
 namespace app\index\controller;
 
 use app\common\controller\Frontend;
+use app\common\library\Sms;
 use think\Config;
 use think\Cookie;
 use think\Hook;
@@ -91,8 +92,7 @@ class User extends Frontend
                 'password'  => 'require|length:6,30',
                 'email'     => 'require|email',
                 'mobile'    => 'regex:/^1\d{10}$/',
-                'captcha'   => 'require|captcha',
-                '__token__' => 'token',
+                '__token__' => 'require|token',
             ];
 
             $msg = [
@@ -100,8 +100,8 @@ class User extends Frontend
                 'username.length'  => 'Username must be 3 to 30 characters',
                 'password.require' => 'Password can not be empty',
                 'password.length'  => 'Password must be 6 to 30 characters',
-                'captcha.require'  => 'Captcha can not be empty',
-                'captcha.captcha'  => 'Captcha is incorrect',
+                //'captcha.require'  => 'Captcha can not be empty',
+                //'captcha.captcha'  => 'Captcha is incorrect',
                 'email'            => 'Email is incorrect',
                 'mobile'           => 'Mobile is incorrect',
             ];
@@ -110,9 +110,13 @@ class User extends Frontend
                 'password'  => $password,
                 'email'     => $email,
                 'mobile'    => $mobile,
-                'captcha'   => $captcha,
+                //'captcha'   => $captcha,
                 '__token__' => $token,
             ];
+            $ret = Sms::check($mobile, $captcha, 'register');
+            if (!$ret) {
+                $this->error(__('Captcha is incorrect'));
+            }
             $validate = new Validate($rule, $msg);
             $result = $validate->check($data);
             if (!$result) {
@@ -152,7 +156,7 @@ class User extends Frontend
             $rule = [
                 'account'   => 'require|length:3,50',
                 'password'  => 'require|length:6,30',
-                '__token__' => 'token',
+                '__token__' => 'require|token',
             ];
 
             $msg = [

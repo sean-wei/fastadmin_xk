@@ -18,7 +18,7 @@ return [
     // 应用命名空间
     'app_namespace'          => 'app',
     // 应用调试模式
-    'app_debug'              => true ,//Env::get('app.debug', false),
+    'app_debug'              => Env::get('app.debug', false),
     // 应用Trace
     'app_trace'              => Env::get('app.trace', false),
     // 应用模式状态
@@ -57,7 +57,7 @@ return [
     // 默认模块名
     'default_module'         => 'index',
     // 禁止访问模块
-    'deny_module_list'       => ['common'],
+    'deny_module_list'       => ['common', 'admin'],
     // 默认控制器名
     'default_controller'     => 'Index',
     // 默认操作名
@@ -82,7 +82,7 @@ return [
     // URL伪静态后缀
     'url_html_suffix'        => 'html',
     // URL普通方式参数 用于自动生成
-    'url_common_param'       => true,
+    'url_common_param'       => false,
     // URL参数方式 0 按名称成对解析 1 按顺序解析
     'url_param_type'         => 0,
     // 是否开启路由
@@ -256,7 +256,7 @@ return [
         'expire'   => 0,
     ],
     //FastAdmin配置
-    'fastadmin'               => [
+    'fastadmin'              => [
         //是否开启前台会员中心
         'usercenter'          => true,
         //登录验证码
@@ -265,6 +265,8 @@ return [
         'login_failure_retry' => true,
         //是否同一账号同一时间只能在一个地方登录
         'login_unique'        => false,
+        //是否开启IP变动检测
+        'loginip_check'      => true,
         //登录页默认背景图
         'login_background'    => "/assets/img/loginbg.jpg",
         //是否启用多级菜单导航
@@ -272,12 +274,8 @@ return [
         //自动检测更新
         'checkupdate'         => false,
         //版本号
-        'version'             => '1.0.0.20190510_beta',
+        'version'             => '1.0.0.20191101_beta',
         //API接口地址
         'api_url'             => 'https://api.fastadmin.net',
     ],
-
-    //域名
-    'root_address' => 'http://localhost:8845',
-
 ];

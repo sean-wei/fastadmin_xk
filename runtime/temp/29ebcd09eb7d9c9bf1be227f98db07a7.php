@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:6:{s:88:"/Applications/MAMP/htdocs/fastadmin_xk/public/../application/admin/view/index/index.html";i:1573550187;s:78:"/Applications/MAMP/htdocs/fastadmin_xk/application/admin/view/common/meta.html";i:1559297295;s:80:"/Applications/MAMP/htdocs/fastadmin_xk/application/admin/view/common/header.html";i:1573549722;s:78:"/Applications/MAMP/htdocs/fastadmin_xk/application/admin/view/common/menu.html";i:1559297295;s:81:"/Applications/MAMP/htdocs/fastadmin_xk/application/admin/view/common/control.html";i:1559297295;s:80:"/Applications/MAMP/htdocs/fastadmin_xk/application/admin/view/common/script.html";i:1559297295;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:6:{s:88:"/Applications/MAMP/htdocs/fastadmin_xk/public/../application/admin/view/index/index.html";i:1573614238;s:78:"/Applications/MAMP/htdocs/fastadmin_xk/application/admin/view/common/meta.html";i:1573614238;s:80:"/Applications/MAMP/htdocs/fastadmin_xk/application/admin/view/common/header.html";i:1573614238;s:78:"/Applications/MAMP/htdocs/fastadmin_xk/application/admin/view/common/menu.html";i:1573617451;s:81:"/Applications/MAMP/htdocs/fastadmin_xk/application/admin/view/common/control.html";i:1573614238;s:80:"/Applications/MAMP/htdocs/fastadmin_xk/application/admin/view/common/script.html";i:1573614238;}*/ ?>
 <!DOCTYPE html>
 <html lang="<?php echo $config['language']; ?>">
     <head>
@@ -23,7 +23,7 @@
     };
 </script>
     </head>
-    <body class="hold-transition skin-blue sidebar-mini fixed <?php if($config['fastadmin']['multiplenav']): ?>multiplenav<?php endif; ?>" id="tabs">
+    <body class="hold-transition skin-green sidebar-mini fixed <?php if($config['fastadmin']['multiplenav']): ?>multiplenav<?php endif; ?>" id="tabs">
         <div class="wrapper">
 
             <!-- 头部区域 -->
@@ -31,9 +31,9 @@
                 <!-- Logo -->
 <a href="javascript:;" class="logo">
     <!-- 迷你模式下Logo的大小为50X50 -->
-    <span class="logo-mini"><?php echo mb_strtoupper(mb_substr($site['name'],0,9,'utf-8'),'utf-8'); ?></span>
+    <span class="logo-mini"><?php echo htmlentities(mb_strtoupper(mb_substr($site['name'],0,4,'utf-8'),'utf-8')); ?></span>
     <!-- 普通模式下Logo -->
-    <span class="logo-lg"><b><?php echo mb_substr($site['name'],0,12,'utf-8'); ?></b><?php echo mb_substr($site['name'],12,null,'utf-8'); ?></span>
+    <span class="logo-lg"><b><?php echo htmlentities(mb_substr($site['name'],0,4,'utf-8')); ?></b><?php echo htmlentities(mb_substr($site['name'],4,null,'utf-8')); ?></span>
 </a>
 
 <!-- 顶部通栏样式 -->
@@ -102,33 +102,33 @@
                 <!-- 账号信息下拉框 -->
                 <li class="dropdown user user-menu">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                        <img src="<?php echo cdnurl($admin['avatar']); ?>" class="user-image" alt="<?php echo $admin['nickname']; ?>">
-                        <span class="hidden-xs"><?php echo $admin['nickname']; ?></span>
+                        <img src="<?php echo htmlentities(cdnurl($admin['avatar'])); ?>" class="user-image" alt="<?php echo htmlentities($admin['nickname']); ?>">
+                        <span class="hidden-xs"><?php echo htmlentities($admin['nickname']); ?></span>
                     </a>
                     <ul class="dropdown-menu">
                         <!-- User image -->
                         <li class="user-header">
-                            <img src="<?php echo cdnurl($admin['avatar']); ?>" class="img-circle" alt="">
+                            <img src="<?php echo htmlentities(cdnurl($admin['avatar'])); ?>" class="img-circle" alt="">
 
                             <p>
-                                <?php echo $admin['nickname']; ?>
+                                <?php echo htmlentities($admin['nickname']); ?>
                                 <small><?php echo date("Y-m-d H:i:s",$admin['logintime']); ?></small>
                             </p>
                         </li>
                         <!-- Menu Body -->
-                        <!--<li class="user-body">-->
-                            <!--<div class="row">-->
-                                <!--<div class="col-xs-4 text-center">-->
-                                    <!--<a href="https://www.fastadmin.net" target="_blank"><?php echo __('FastAdmin'); ?></a>-->
-                                <!--</div>-->
-                                <!--<div class="col-xs-4 text-center">-->
-                                    <!--<a href="https://forum.fastadmin.net" target="_blank"><?php echo __('Forum'); ?></a>-->
-                                <!--</div>-->
-                                <!--<div class="col-xs-4 text-center">-->
-                                    <!--<a href="https://doc.fastadmin.net" target="_blank"><?php echo __('Docs'); ?></a>-->
-                                <!--</div>-->
-                            <!--</div>-->
-                        <!--</li>-->
+                        <li class="user-body">
+                            <div class="row">
+                                <div class="col-xs-4 text-center">
+                                    <a href="https://www.fastadmin.net" target="_blank"><?php echo __('FastAdmin'); ?></a>
+                                </div>
+                                <div class="col-xs-4 text-center">
+                                    <a href="https://forum.fastadmin.net" target="_blank"><?php echo __('Forum'); ?></a>
+                                </div>
+                                <div class="col-xs-4 text-center">
+                                    <a href="https://doc.fastadmin.net" target="_blank"><?php echo __('Docs'); ?></a>
+                                </div>
+                            </div>
+                        </li>
                         <!-- Menu Footer-->
                         <li class="user-footer">
                             <div class="pull-left">
@@ -168,13 +168,14 @@
             <!-- 左侧菜单栏 -->
             <aside class="main-sidebar">
                 <!-- 左侧菜单栏 -->
+<section class="sidebar">
     <!-- 管理员信息 -->
     <div class="user-panel hidden-xs">
         <div class="pull-left image">
-            <a href="general/profile" class="addtabsit"><img src="<?php echo cdnurl($admin['avatar']); ?>" class="img-circle" /></a>
+            <a href="general/profile" class="addtabsit"><img src="<?php echo htmlentities(cdnurl($admin['avatar'])); ?>" class="img-circle" /></a>
         </div>
         <div class="pull-left info">
-            <p><?php echo $admin['nickname']; ?></p>
+            <p><?php echo htmlentities($admin['nickname']); ?></p>
             <i class="fa fa-circle text-success"></i> <?php echo __('Online'); ?>
         </div>
     </div>
@@ -203,12 +204,12 @@
         <!-- 菜单可以在 后台管理->权限管理->菜单规则 中进行增删改排序 -->
         <?php echo $menulist; ?>
 
-        <!--&lt;!&ndash;以下4行可以删除或改成自己的链接,但建议你在你的网站上添加一个FastAdmin的链接&ndash;&gt;-->
-        <!--<li class="header" data-rel="external"><?php echo __('Links'); ?></li>-->
-        <!--<li data-rel="external"><a href="https://doc.fastadmin.net" target="_blank"><i class="fa fa-list text-red"></i> <span><?php echo __('Docs'); ?></span></a></li>-->
+        <!--以下4行可以删除或改成自己的链接,但建议你在你的网站上添加一个FastAdmin的链接-->
+        <li class="header" data-rel="external"><?php echo __('Links'); ?></li>
+        <li data-rel="external"><a href="https://doc.fastadmin.net" target="_blank"><i class="fa fa-list text-red"></i> <span><?php echo __('Docs'); ?></span></a></li>
         <!--<li data-rel="external"><a href="https://forum.fastadmin.net" target="_blank"><i class="fa fa-comment text-yellow"></i> <span><?php echo __('Forum'); ?></span></a></li>-->
         <!--<li data-rel="external"><a href="https://jq.qq.com/?_wv=1027&k=487PNBb" target="_blank"><i class="fa fa-qq text-aqua"></i> <span><?php echo __('QQ qun'); ?></span></a></li>-->
-    <!---->
+
     </ul>
 </section>
             </aside>
@@ -230,7 +231,7 @@
             <footer class="main-footer hide">
                 <div class="pull-right hidden-xs">
                 </div>
-                <strong>Copyright &copy; 2019 <a href="#t">FastAdmin</a>.</strong> All rights reserved.
+                <strong>Copyright &copy; 2017-2018 <a href="https://www.fastadmin.net">Fastadmin</a>.</strong> All rights reserved.
             </footer>
 
             <!-- 右侧控制栏 -->
@@ -297,6 +298,6 @@
         </div>
 
         <!-- 加载JS脚本 -->
-        <script src="/assets/js/require<?php echo \think\Config::get('app_debug')?'':'.min'; ?>.js" data-main="/assets/js/require-backend<?php echo \think\Config::get('app_debug')?'':'.min'; ?>.js?v=<?php echo $site['version']; ?>"></script>
+        <script src="/assets/js/require<?php echo \think\Config::get('app_debug')?'':'.min'; ?>.js" data-main="/assets/js/require-backend<?php echo \think\Config::get('app_debug')?'':'.min'; ?>.js?v=<?php echo htmlentities($site['version']); ?>"></script>
     </body>
 </html>

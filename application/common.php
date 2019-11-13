@@ -1,7 +1,6 @@
 <?php
 
 // 公共助手函数
-error_reporting(E_ERROR | E_WARNING | E_PARSE);
 
 if (!function_exists('__')) {
 
@@ -362,62 +361,4 @@ if (!function_exists('hsv2rgb')) {
             floor($b * 255)
         ];
     }
-
-    /**
-     * 获取文章、文章详细内容
-     * @param $tid 落地页id
-     * @param $limit 限制条数
-     * @param string $order 排序条件,只对基本表doc起作用
-     * @return array
-     */
-    function article($tid,$limit,$order){
-
-        $ldyDoc = db('ldy_doc ld')
-            ->where('ldy_id',$tid)
-            ->join('ldy_doc_detail ldd','ld.id = ldd.doc_id')
-            ->select();
-        $list = $ldyDoc;
-
-        return $list;
-    }
-
-
-    /**
-     * 获取问答内容
-     * @param $id 文章id
-     * @return bool
-     */
-    function answer($id){
-        if(empty($id)){
-            return false;
-        }
-        $list=db('ldy_doc_reply')->where('doc_id', $id)->order('level asc')->select();
-        return $list;
-    }
-
-
-    /**
-     *  转换为json格式-小程序接口
-     *
-     * @param $status
-     * @param $msg
-     * @param array $data
-     * @return string
-     */
-    function toJson($status, $msg, $data=[]){
-        $result = [
-            'status' => $status,
-            'msg' => $msg,
-            'data' => $data
-        ];
-
-        return json_encode($result);
-    }
-
-
-
-
-
-
-
 }

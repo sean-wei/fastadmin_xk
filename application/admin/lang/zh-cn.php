@@ -73,7 +73,6 @@ return [
     'Index'                                                 => '首页',
     'Hot'                                                   => '热门',
     'Recommend'                                             => '推荐',
-    'Dashboard'                                             => '控制台',
     'Upload'                                                => '上传',
     'Uploading'                                             => '上传中',
     'Code'                                                  => '编号',
@@ -138,6 +137,7 @@ return [
     'Are you sure you want to delete this item?'            => '确定删除此项?',
     'Are you sure you want to delete or turncate?'          => '确定删除或清空?',
     'Are you sure you want to truncate?'                    => '确定清空?',
+    'Token verification error'                              => 'Token验证错误！',
     'You have no permission'                                => '你没有权限访问',
     'Please enter your username'                            => '请输入你的用户名',
     'Please enter your password'                            => '请输入你的密码',
@@ -149,17 +149,11 @@ return [
     //菜单
     'Dashboard'                                             => '控制台',
     'General'                                               => '常规管理',
-
-    //落地页菜单
-    'Ldy Management'                                        => '落地页管理',
-
-
     'Category'                                              => '分类管理',
     'Addon'                                                 => '插件管理',
     'Auth'                                                  => '权限管理',
     'Config'                                                => '系统配置',
     'Attachment'                                            => '附件管理',
-    'Profile'                                               => '个人配置',
     'Admin'                                                 => '管理员管理',
     'Admin log'                                             => '管理员日志',
     'Group'                                                 => '角色组',

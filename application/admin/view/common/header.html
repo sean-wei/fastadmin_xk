@@ -1,9 +1,9 @@
 <!-- Logo -->
 <a href="javascript:;" class="logo">
     <!-- 迷你模式下Logo的大小为50X50 -->
-    <span class="logo-mini">{$site.name|mb_substr=0,9,'utf-8'|mb_strtoupper='utf-8'}</span>
+    <span class="logo-mini">{$site.name|mb_substr=0,4,'utf-8'|mb_strtoupper='utf-8'|htmlentities}</span>
     <!-- 普通模式下Logo -->
-    <span class="logo-lg"><b>{$site.name|mb_substr=0,12,'utf-8'}</b>{$site.name|mb_substr=12,null,'utf-8'}</span>
+    <span class="logo-lg"><b>{$site.name|mb_substr=0,4,'utf-8'|htmlentities}</b>{$site.name|mb_substr=4,null,'utf-8'|htmlentities}</span>
 </a>
 
 <!-- 顶部通栏样式 -->
@@ -72,33 +72,33 @@
                 <!-- 账号信息下拉框 -->
                 <li class="dropdown user user-menu">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                        <img src="{$admin.avatar|cdnurl}" class="user-image" alt="{$admin.nickname}">
-                        <span class="hidden-xs">{$admin.nickname}</span>
+                        <img src="{$admin.avatar|cdnurl|htmlentities}" class="user-image" alt="{$admin.nickname|htmlentities}">
+                        <span class="hidden-xs">{$admin.nickname|htmlentities}</span>
                     </a>
                     <ul class="dropdown-menu">
                         <!-- User image -->
                         <li class="user-header">
-                            <img src="{$admin.avatar|cdnurl}" class="img-circle" alt="">
+                            <img src="{$admin.avatar|cdnurl|htmlentities}" class="img-circle" alt="">
 
                             <p>
-                                {$admin.nickname}
+                                {$admin.nickname|htmlentities}
                                 <small>{$admin.logintime|date="Y-m-d H:i:s",###}</small>
                             </p>
                         </li>
                         <!-- Menu Body -->
-                        <!--<li class="user-body">-->
-                            <!--<div class="row">-->
-                                <!--<div class="col-xs-4 text-center">-->
-                                    <!--<a href="https://www.fastadmin.net" target="_blank">{:__('FastAdmin')}</a>-->
-                                <!--</div>-->
-                                <!--<div class="col-xs-4 text-center">-->
-                                    <!--<a href="https://forum.fastadmin.net" target="_blank">{:__('Forum')}</a>-->
-                                <!--</div>-->
-                                <!--<div class="col-xs-4 text-center">-->
-                                    <!--<a href="https://doc.fastadmin.net" target="_blank">{:__('Docs')}</a>-->
-                                <!--</div>-->
-                            <!--</div>-->
-                        <!--</li>-->
+                        <li class="user-body">
+                            <div class="row">
+                                <div class="col-xs-4 text-center">
+                                    <a href="https://www.fastadmin.net" target="_blank">{:__('FastAdmin')}</a>
+                                </div>
+                                <div class="col-xs-4 text-center">
+                                    <a href="https://forum.fastadmin.net" target="_blank">{:__('Forum')}</a>
+                                </div>
+                                <div class="col-xs-4 text-center">
+                                    <a href="https://doc.fastadmin.net" target="_blank">{:__('Docs')}</a>
+                                </div>
+                            </div>
+                        </li>
                         <!-- Menu Footer-->
                         <li class="user-footer">
                             <div class="pull-left">

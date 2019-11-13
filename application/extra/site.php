@@ -1,7 +1,7 @@
 <?php
 
 return array (
-  'name' => '南宁祥垦运输-公众号',
+  'name' => 'FastAdmin',
   'beian' => '',
   'cdnurl' => '',
   'version' => '1.0.1',

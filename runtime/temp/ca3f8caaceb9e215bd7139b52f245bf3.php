@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:88:"/Applications/MAMP/htdocs/fastadmin_xk/public/../application/index/view/index/index.html";i:1573550186;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:88:"/Applications/MAMP/htdocs/fastadmin_xk/public/../application/index/view/index/index.html";i:1573614238;}*/ ?>
 <!DOCTYPE html>
 <html>
 
@@ -64,7 +64,6 @@
                             <div class="header-content-inner">
                                 <h1>FastAdmin</h1>
                                 <h3><?php echo __('The fastest framework based on ThinkPHP5 and Bootstrap'); ?></h3>
-                                <a href="<?php echo url('admin/index/login'); ?>" class="btn btn-warning btn-xl page-scroll"><?php echo __('Go to Dashboard'); ?></a>
                                 <a href="<?php echo url('index/user/index'); ?>" class="btn btn-outline btn-xl page-scroll"><?php echo __('Go to Member center'); ?></a>
                             </div>
                         </div>
@@ -148,7 +147,7 @@
         <footer>
             <div class="container">
                 <!-- FastAdmin是开源程序，建议在您的网站底部保留一个FastAdmin的链接 -->
-                <p>&copy; 2017-2018 <a href="https://www.fastadmin.net" target="_blank">FastAdmin</a>. All Rights Reserved.</p>
+                <p>&copy; 2017-2019 <a href="https://www.fastadmin.net" target="_blank">FastAdmin</a>. All Rights Reserved.</p>
                 <ul class="list-inline">
                     <li>
                         <a href="https://gitee.com/karson/fastadmin"><?php echo __('Gitee'); ?></a>
