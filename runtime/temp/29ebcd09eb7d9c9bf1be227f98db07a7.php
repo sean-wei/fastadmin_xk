@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:6:{s:88:"/Applications/MAMP/htdocs/fastadmin_xk/public/../application/admin/view/index/index.html";i:1573614238;s:78:"/Applications/MAMP/htdocs/fastadmin_xk/application/admin/view/common/meta.html";i:1573614238;s:80:"/Applications/MAMP/htdocs/fastadmin_xk/application/admin/view/common/header.html";i:1573614238;s:78:"/Applications/MAMP/htdocs/fastadmin_xk/application/admin/view/common/menu.html";i:1573617451;s:81:"/Applications/MAMP/htdocs/fastadmin_xk/application/admin/view/common/control.html";i:1573614238;s:80:"/Applications/MAMP/htdocs/fastadmin_xk/application/admin/view/common/script.html";i:1573614238;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:6:{s:88:"/Applications/MAMP/htdocs/fastadmin_xk/public/../application/admin/view/index/index.html";i:1573614238;s:78:"/Applications/MAMP/htdocs/fastadmin_xk/application/admin/view/common/meta.html";i:1573614238;s:80:"/Applications/MAMP/htdocs/fastadmin_xk/application/admin/view/common/header.html";i:1573630739;s:78:"/Applications/MAMP/htdocs/fastadmin_xk/application/admin/view/common/menu.html";i:1573617451;s:81:"/Applications/MAMP/htdocs/fastadmin_xk/application/admin/view/common/control.html";i:1573614238;s:80:"/Applications/MAMP/htdocs/fastadmin_xk/application/admin/view/common/script.html";i:1573614238;}*/ ?>
 <!DOCTYPE html>
 <html lang="<?php echo $config['language']; ?>">
     <head>
@@ -116,19 +116,19 @@
                             </p>
                         </li>
                         <!-- Menu Body -->
-                        <li class="user-body">
-                            <div class="row">
-                                <div class="col-xs-4 text-center">
-                                    <a href="https://www.fastadmin.net" target="_blank"><?php echo __('FastAdmin'); ?></a>
-                                </div>
-                                <div class="col-xs-4 text-center">
-                                    <a href="https://forum.fastadmin.net" target="_blank"><?php echo __('Forum'); ?></a>
-                                </div>
-                                <div class="col-xs-4 text-center">
-                                    <a href="https://doc.fastadmin.net" target="_blank"><?php echo __('Docs'); ?></a>
-                                </div>
-                            </div>
-                        </li>
+                        <!--<li class="user-body">-->
+                            <!--<div class="row">-->
+                                <!--<div class="col-xs-4 text-center">-->
+                                    <!--<a href="https://www.fastadmin.net" target="_blank"><?php echo __('FastAdmin'); ?></a>-->
+                                <!--</div>-->
+                                <!--<div class="col-xs-4 text-center">-->
+                                    <!--<a href="https://forum.fastadmin.net" target="_blank"><?php echo __('Forum'); ?></a>-->
+                                <!--</div>-->
+                                <!--<div class="col-xs-4 text-center">-->
+                                    <!--<a href="https://doc.fastadmin.net" target="_blank"><?php echo __('Docs'); ?></a>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</li>-->
                         <!-- Menu Footer-->
                         <li class="user-footer">
                             <div class="pull-left">

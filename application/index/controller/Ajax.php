@@ -16,6 +16,12 @@ class Ajax extends Frontend
     protected $noNeedRight = ['*'];
     protected $layout = '';
 
+    //baidu AI
+    const APP_ID = '17750882';
+    const API_KEY = '5f6UsRx8GtY31dpGK0GhazMQ';
+    const SECRET_KEY = 'M9tBhNTmhRdXBeN2c3mOIyzaecH7SnPe';
+
+
     /**
      * 加载语言包
      */
@@ -37,5 +43,10 @@ class Ajax extends Frontend
     {
         return action('api/common/upload');
     }
+
+
+
+
+
 
 }

@@ -130,10 +130,10 @@ class Auth
             $this->setError('Username already exist');
             return false;
         }
-        if ($email && User::getByEmail($email)) {
-            $this->setError('Email already exist');
-            return false;
-        }
+//        if ($email && User::getByEmail($email)) {
+//            $this->setError('Email already exist');
+//            return false;
+//        }
         if ($mobile && User::getByMobile($mobile)) {
             $this->setError('Mobile already exist');
             return false;

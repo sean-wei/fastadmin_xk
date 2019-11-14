@@ -88,9 +88,9 @@ class User extends Frontend
             $captcha = $this->request->post('captcha');
             $token = $this->request->post('__token__');
             $rule = [
-                'username'  => 'require|length:3,30',
+//                'username'  => 'require|length:3,30',
                 'password'  => 'require|length:6,30',
-                'email'     => 'require|email',
+//                'email'     => 'require|email',
                 'mobile'    => 'regex:/^1\d{10}$/',
                 '__token__' => 'require|token',
             ];
@@ -113,10 +113,10 @@ class User extends Frontend
                 //'captcha'   => $captcha,
                 '__token__' => $token,
             ];
-            $ret = Sms::check($mobile, $captcha, 'register');
-            if (!$ret) {
-                $this->error(__('Captcha is incorrect'));
-            }
+//            $ret = Sms::check($mobile, $captcha, 'register');
+//            if (!$ret) {
+//                $this->error(__('Captcha is incorrect'));
+//            }
             $validate = new Validate($rule, $msg);
             $result = $validate->check($data);
             if (!$result) {

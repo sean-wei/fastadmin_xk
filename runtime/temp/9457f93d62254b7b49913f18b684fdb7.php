@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:93:"/Applications/MAMP/htdocs/fastadmin_git/public/../application/admin/view/user/rule/index.html";i:1573614238;s:82:"/Applications/MAMP/htdocs/fastadmin_git/application/admin/view/layout/default.html";i:1573614238;s:79:"/Applications/MAMP/htdocs/fastadmin_git/application/admin/view/common/meta.html";i:1573614238;s:81:"/Applications/MAMP/htdocs/fastadmin_git/application/admin/view/common/script.html";i:1573614238;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:96:"/Applications/MAMP/htdocs/fastadmin_xk/public/../application/admin/view/auth/adminlog/index.html";i:1573614238;s:81:"/Applications/MAMP/htdocs/fastadmin_xk/application/admin/view/layout/default.html";i:1573614238;s:78:"/Applications/MAMP/htdocs/fastadmin_xk/application/admin/view/common/meta.html";i:1573614238;s:80:"/Applications/MAMP/htdocs/fastadmin_xk/application/admin/view/common/script.html";i:1573614238;}*/ ?>
 <!DOCTYPE html>
 <html lang="<?php echo $config['language']; ?>">
     <head>
@@ -58,18 +58,11 @@
             <div class="tab-pane fade active in" id="one">
                 <div class="widget-body no-padding">
                     <div id="toolbar" class="toolbar">
-                        <?php echo build_toolbar('refresh,add,edit,del'); ?>
-                        <div class="dropdown btn-group <?php echo $auth->check('user/rule/multi')?'':'hide'; ?>">
-                            <a class="btn btn-primary btn-more dropdown-toggle btn-disabled disabled" data-toggle="dropdown"><i class="fa fa-cog"></i> <?php echo __('More'); ?></a>
-                            <ul class="dropdown-menu text-left" role="menu">
-                                <li><a class="btn btn-link btn-multi btn-disabled disabled" href="javascript:;" data-params="status=normal"><i class="fa fa-eye"></i> <?php echo __('Set to normal'); ?></a></li>
-                                <li><a class="btn btn-link btn-multi btn-disabled disabled" href="javascript:;" data-params="status=hidden"><i class="fa fa-eye-slash"></i> <?php echo __('Set to hidden'); ?></a></li>
-                            </ul>
-                        </div>
+                        <?php echo build_toolbar('refresh,delete'); ?>
                     </div>
                     <table id="table" class="table table-striped table-bordered table-hover" 
-                           data-operate-edit="<?php echo $auth->check('user/rule/edit'); ?>" 
-                           data-operate-del="<?php echo $auth->check('user/rule/del'); ?>" 
+                           data-operate-detail="<?php echo $auth->check('auth/adminlog/index'); ?>" 
+                           data-operate-del="<?php echo $auth->check('auth/adminlog/del'); ?>" 
                            width="100%">
                     </table>
                 </div>
@@ -78,7 +71,6 @@
         </div>
     </div>
 </div>
-
                             </div>
                         </div>
                     </div>

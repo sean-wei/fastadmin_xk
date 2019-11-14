@@ -3,7 +3,7 @@
 return [
     'Id'                  => 'ID',
     'Group_id'            => '组别ID',
-    'Username'            => '用户名',
+    'Username'            => '姓名',
     'Nickname'            => '昵称',
     'Password'            => '密码',
     'Salt'                => '密码盐',
@@ -36,6 +36,6 @@ return [
     'Card_id'             => '身份证号码',
     'Qianfa_start'        => '签发日期',
     'Qianfa_end'          => '失效日期',
-    'Qianfa_unit'         => '签发单位',
+    'Qianfa_unit'         => '签发机关',
     'Healthimages'        => '身体检查报告图'
 ];

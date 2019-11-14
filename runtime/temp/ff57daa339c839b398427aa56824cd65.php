@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:91:"/Applications/MAMP/htdocs/fastadmin_git/public/../application/admin/view/command/index.html";i:1573625132;s:82:"/Applications/MAMP/htdocs/fastadmin_git/application/admin/view/layout/default.html";i:1573614238;s:79:"/Applications/MAMP/htdocs/fastadmin_git/application/admin/view/common/meta.html";i:1573614238;s:81:"/Applications/MAMP/htdocs/fastadmin_git/application/admin/view/common/script.html";i:1573614238;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:93:"/Applications/MAMP/htdocs/fastadmin_xk/public/../application/admin/view/user/group/index.html";i:1573614238;s:81:"/Applications/MAMP/htdocs/fastadmin_xk/application/admin/view/layout/default.html";i:1573614238;s:78:"/Applications/MAMP/htdocs/fastadmin_xk/application/admin/view/common/meta.html";i:1573614238;s:80:"/Applications/MAMP/htdocs/fastadmin_xk/application/admin/view/common/script.html";i:1573614238;}*/ ?>
 <!DOCTYPE html>
 <html lang="<?php echo $config['language']; ?>">
     <head>
@@ -58,15 +58,18 @@
             <div class="tab-pane fade active in" id="one">
                 <div class="widget-body no-padding">
                     <div id="toolbar" class="toolbar">
-                        <a href="javascript:;" class="btn btn-primary btn-refresh" title="<?php echo __('Refresh'); ?>" ><i class="fa fa-refresh"></i> </a>
-                        <a href="javascript:;" class="btn btn-success btn-add <?php echo $auth->check('command/add')?'':'hide'; ?>" title="<?php echo __('Add'); ?>" ><i class="fa fa-plus"></i> <?php echo __('Add'); ?></a>
-                        <a href="javascript:;" class="btn btn-danger btn-del btn-disabled disabled <?php echo $auth->check('command/del')?'':'hide'; ?>" title="<?php echo __('Delete'); ?>" ><i class="fa fa-trash"></i> <?php echo __('Delete'); ?></a>
-
+                        <?php echo build_toolbar('refresh,add,edit,del'); ?>
+                        <div class="dropdown btn-group <?php echo $auth->check('user/group/multi')?'':'hide'; ?>">
+                            <a class="btn btn-primary btn-more dropdown-toggle btn-disabled disabled" data-toggle="dropdown"><i class="fa fa-cog"></i> <?php echo __('More'); ?></a>
+                            <ul class="dropdown-menu text-left" role="menu">
+                                <li><a class="btn btn-link btn-multi btn-disabled disabled" href="javascript:;" data-params="status=normal"><i class="fa fa-eye"></i> <?php echo __('Set to normal'); ?></a></li>
+                                <li><a class="btn btn-link btn-multi btn-disabled disabled" href="javascript:;" data-params="status=hidden"><i class="fa fa-eye-slash"></i> <?php echo __('Set to hidden'); ?></a></li>
+                            </ul>
+                        </div>
                     </div>
                     <table id="table" class="table table-striped table-bordered table-hover" 
-                           data-operate-detail="<?php echo $auth->check('command/detail'); ?>"
-                           data-operate-execute="<?php echo $auth->check('command/execute'); ?>"
-                           data-operate-del="<?php echo $auth->check('command/del'); ?>"
+                           data-operate-edit="<?php echo $auth->check('user/group/edit'); ?>" 
+                           data-operate-del="<?php echo $auth->check('user/group/del'); ?>" 
                            width="100%">
                     </table>
                 </div>
