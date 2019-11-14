@@ -31,7 +31,7 @@ class WxApi
     //获取code ->获取openID
     public function open(){
         //回调url，公众号设置-功能设置-网页授权域名
-        $url="http://www.nnjnsbio.com/index/info/index";
+        $url="http://www.xiangken.com/index/xken/index";
         $web = "https://open.weixin.qq.com/connect/oauth2/authorize?appid=". self::APP_ID ."&redirect_uri=".$url."&response_type=code&scope=snsapi_base&state=STATE&#wechat_redirect";
         header("Location:".$web);
     }

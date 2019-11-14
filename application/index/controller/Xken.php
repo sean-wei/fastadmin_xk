@@ -23,8 +23,12 @@ class Xken extends Frontend
 
         $wxApi = new WxApi();
         $wxApi->open();
-        var_dump('test');exit();
+//        var_dump('test');exit();
+    }
 
+    public function index()
+    {
+        $wxApi = new WxApi();
         $openid = $wxApi->getOpenId();
         if ($openid){
             $hasRegist = \db('user')->where('openid',$openid)->select();
@@ -34,11 +38,6 @@ class Xken extends Frontend
                 $this->redirect('Xken/register');
             }
         }
-
-    }
-
-    public function index()
-    {
 
 
         return $this->view->fetch();

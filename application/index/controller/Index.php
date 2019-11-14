@@ -13,7 +13,9 @@ class Index extends Frontend
 
     public function index()
     {
-        return $this->view->fetch();
+//        return $this->view->fetch();
+
+        $this->redirect('Xken/index');
     }
 
     public function news()
